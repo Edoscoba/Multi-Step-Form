@@ -6,6 +6,7 @@
     <title>Multi-step-form</title>
     <!-- display site properly base on user's device -->
     <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
@@ -75,10 +76,16 @@
                 <h1 class="title">Select your plan</h1>
                 <p class="step-description">You have the option of monthly or yearly billing.</p>
                 <div class="cards">
-                    <div class="cards" data-name="arcade">
+                    <div class="card" data-name="arcade">
                         <img src="./assets/images/icon-arcade.svg" alt="arcade-icon" class="card-img">
                         <h4 class="plan-name">Arcade</h4>
                         <p class="plan-description">$9<span class="yearly-description">0</span>/<span class="yr">mo</span></p>
+                        <span class="yearly-offer">2 months free</span>
+                    </div>
+                    <div class="card" data-name="advance">
+                        <img src="./assets/images/icon-advanced.svg" alt="advance-icon" class="card-img">
+                        <h4 class="plan-name">Advanced</h4>
+                        <p class="plan-description">$12<span class="yearly-description">0</span>/<span class="yr">mo</span></p>
                         <span class="yearly-offer">2 months free</span>
                     </div>
                     <div class="card pro" data-name="pro">
@@ -181,7 +188,7 @@
     </div>
     </div>
     <footer>
-        Made by <a href="">Edoscoba</a>
+        Made by <a href="https://github.com/Edoscoba/Multi-Step-Form">Edoscoba</a>
     </footer>
     
 </body>
