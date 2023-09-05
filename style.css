@@ -22,16 +22,17 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 .main {
     display: flex;
     justify-content: space-between;
-
 }
 
 .number {
@@ -70,7 +71,11 @@ body {
     gap: 10px;
     align-items: center;
 
+
+
+
 }
+
 
 .step {
     position: absolute;
@@ -86,14 +91,13 @@ body {
     float: left;
 }
 
-.sidebar img{
-height: 95vh;
- 
+.sidebar img {
+    height: 95vh;
 }
 
-.input {
+input {
     display: block;
-    width: 2rem;
+    width: 26rem;
     height: 1.5rem;
     margin: 10px 0;
     padding: 10px;
@@ -101,35 +105,39 @@ height: 95vh;
     border-radius: 10px;
     border: 1px solid #eee;
     transition: .3s border-color;
-    font-family: 'space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+
 
 }
 
-.input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* firefox */
-input[type=name] {
+/* Firefox */
+input[type=number] {
     -moz-appearance: textfield;
 }
 
 input:hover {
-    border: 1 px solid #aaa;
+    border: 1px solid #aaa;
 }
-input:focus {
-    border: 3px solid linear-gradient hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
 
+input:focus {
+    border: 3px solid linear-gradient hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
 }
 
 legend {
     color: hsl(213, 96%, 18%);
+
     margin-top: 2rem;
+
+
 }
 
-hi.title {
+h1.title {
     color: hsl(213, 96%, 18%);
     font-size: xxx-large;
 
@@ -139,7 +147,6 @@ p.step-description {
     color: #aaa;
     margin-top: -1rem;
     margin-bottom: 3rem;
-
 }
 
 .main-form {
@@ -148,12 +155,14 @@ p.step-description {
     flex-direction: column;
 
 }
+
 .buttons {
     position: absolute;
     bottom: 1rem;
     display: flex;
     justify-content: space-around;
     gap: 10rem;
+
 }
 
 .buttons .next-step {
@@ -163,6 +172,8 @@ p.step-description {
     width: 15rem;
     margin: 10px 0;
     padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
     border: 1px solid #eee;
     transition: .3s border-color;
 
@@ -176,12 +187,10 @@ p.step-description {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-
 }
 
 .go-back-button {
     visibility: hidden;
-
 }
 
 .card {
@@ -192,37 +201,32 @@ p.step-description {
     padding: 1rem;
     overflow: auto;
     cursor: pointer;
-
 }
 
-.card:active.card:checked {
+.card:active,
+.card:checked {
     border: 2px solid hsl(243, 100%, 62%);
-
 }
+
 .cards {
     display: flex;
     gap: 2rem;
     margin-bottom: 3rem;
-
 }
 
 .card {
-   border: 1px solid transparent;
-   
+    border: 2px solid transparent;
 }
 
 .card.selected {
     border: 2px solid blue;
-
 }
 
 .card img {
     margin-bottom: 4rem;
-
 }
 
-/* toggle switch */
-
+/* toggle switches */
 article {
     max-width: 40rem;
     margin: 1.5rem auto;
@@ -230,11 +234,11 @@ article {
 
 body,
 article,
+section,
 section>*,
-.toggle-dot
+.toggle-dot,
 .selector {
     transition: background-color 1s;
-
 }
 
 #Toggle-Switches-Container {
@@ -243,21 +247,20 @@ section>*,
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    
 }
 
 #Toggle-Switches-Container section {
     border-radius: 10px;
     text-align: center;
-    padding: 2rem;
+    padding: 2em;
     width: 48%;
-
 }
 
+
 .panel-element {
-   background-color: var(--light-theme-shadow); 
-   box-shadow: 2px 2px 5px var(  --light-theme-shadow);
-   min-width: 12rem;
+    background-color: var(--light-theme-background);
+    box-shadow: 2px 2px 5px var(--light-theme-shadow);
+    min-width: 12rem;
 }
 
 .toggle-contents-wrapper {
@@ -265,22 +268,23 @@ section>*,
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 #Dark-Mode-Switch {
     cursor: pointer;
 }
+
 .toggle-wrapper {
-    background-color: var( --light-theme-primary-dark);
-    border: 2px solid var( --light-theme-primary-dark);
+    background-color: var(--light-theme-primary-dark);
+    border: 2px solid var(--light-theme-primary-dark);
     border-radius: 35px;
-    box-shadow: 1px 1px 5px var( --light-theme-shadow);
+    box-shadow: 1px 1px 5px var(--light-theme-shadow);
     display: flex;
     justify-content: flex-start;
     margin: .5em 1.25em;
     width: 3.5em;
     min-width: 3.5em;
-
 }
 
 .toggle-dot {
@@ -290,20 +294,17 @@ section>*,
     border-radius: 35px;
     height: 1.5em;
     width: 1.5em;
-
 }
 
-.toggle-is-acive {
+.toggle-is-active {
     justify-content: flex-end;
-
 }
 
-.conainer {
+.container {
     border-radius: 15px;
     height: 50%;
     margin: 0 auto;
     width: 100%;
-
 }
 
 .selector {
@@ -329,7 +330,7 @@ section>*,
     justify-content: center;
     padding: 10px;
     transition: color 1s;
-    width: 27px;
+    width: 27%;
     transition: background-color .5s;
 
 }
@@ -338,65 +339,74 @@ section>*,
     background-color: var(--light-theme-secondary-dark);
     cursor: pointer;
     transition: background-color .3s;
-
 }
 
 .content {
     padding: 1.5em;
-
 }
 
 .content-body {
     display: none;
-
 }
+
+.content-body h4 {
+    margin: .5em 0 1rem 0;
+}
+
+.show-active {
+    animation: fade-in 1s;
+    display: block;
+}
+
 .tab-active {
     background-color: var(--light-theme-secondary-dark);
     transition: color 1s;
-
 }
 
 @keyframes fade-in {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
+
     main {
         min-width: 20em;
     }
 
-    #Toggle-Switch-container {
+    #Toggle-Switches-Container {
         flex-direction: column;
         min-height: 19em;
     }
-    
 }
 
-/* small devices (landscape and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     body {
         font-size: 14px;
     }
 }
 
-/* medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 600px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     body {
         font-size: 16px;
     }
+
+    ;
 }
 
 input[type="checkbox"] {
-    width: 1.5em;
+    width: 1.5rem;
 
 }
 
@@ -415,7 +425,7 @@ input[type="checkbox"] {
 
 }
 
-.opt:hover {
+.opts:hover {
     border: 1px solid blue;
 
 }
@@ -424,25 +434,23 @@ input[type="checkbox"] {
     width: 50vw;
 }
 
-.conainer1 h3 {
+.container1 h3 {
+
     color: rgb(2, 41, 90);
     font-size: x-large;
     text-align: start;
-
 }
 
 .option-price {
     color: #3700B3;
-
 }
 
 .des {
     color: #018786;
     margin-top: -10px;
-
 }
 
-.opts.seleccted {
+.opts.selected {
     border: 1px solid blue;
 }
 
@@ -454,20 +462,18 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
     padding-bottom: 2rem;
-
 }
 
-.add-on-1
+.add-on-1,
 .final-price {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.use-selected-add-ons div {
+.user-selected-add-ons div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -481,7 +487,6 @@ p.total {
     font-weight: bolder;
     font-size: x-large;
     color: #3700B3;
-
 }
 
 footer {
@@ -491,48 +496,46 @@ footer {
 .thank {
     text-align: center;
     width: 50vw;
-    padding: 10rem;
-
+    padding-top: 10rem;
 }
+
 
 .light {
     color: #018786;
     font-size: small;
-
 }
 
 .final-box {
     background-color: hsl(204, 83%, 95%);
     padding: 1rem;
     border-radius: 10px;
-
 }
 
 .user-selection {
     width: 45vw;
-
 }
 
 .yearly-offer {
     color: #230e54;
     visibility: hidden;
+
 }
 
 .yearly-description {
     display: none;
-
 }
 
-.plan-descripion {
+.plan-description {
     color: #03DAC6;
 
 }
+
 
 .step-indicator {
     cursor: pointer;
 }
 
-.step-indicator.ctive {
-    background-color: hsl(227, 3%, 97%);
+.step-indicator.active {
+    background-color: hsl(227, 53%, 97%);
     color: hsl(228, 50%, 30%);
 }
